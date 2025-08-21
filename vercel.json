@@ -1,15 +1,11 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "manage.py",
-      "use": "@vercel/python"
-    }
-  ],
+  "version": 3,
+  "functions": {
+    "api/index.py": { "runtime": "python3.11" },
+    "api/health.py": { "runtime": "python3.11" }
+  },
   "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "project1/wsgi.py"
-    }
+    { "src": "/health", "dest": "api/health.py" },
+    { "src": "/(.*)", "dest": "api/index.py" }
   ]
 }
