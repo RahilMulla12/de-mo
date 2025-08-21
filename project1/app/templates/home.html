@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Django Developer Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; background: #f7f7f7; }
+        header { background: #24292e; color: #fff; padding: 2rem 0; text-align: center; }
+        .container { max-width: 900px; margin: 2rem auto; background: #fff; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.07);}
+        h1 { margin-bottom: 0.5rem; }
+        .section { margin-bottom: 2rem; }
+        .skills, .projects { display: flex; flex-wrap: wrap; gap: 1rem; }
+        .skill, .project { background: #f0f0f0; padding: 1rem; border-radius: 6px; flex: 1 1 200px; }
+        a { color: #0366d6; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        @media (max-width: 600px) {
+            .skills, .projects { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Rahil - Django Developer</h1>
+        <p>Building robust web applications with Django & Python</p>
+    </header>
+    <div class="container">
+        <div class="section">
+            <h2>About Me</h2>
+            <p>
+                Hi! I'm Rahil, a passionate Django developer with experience in building scalable and secure web applications. I love working with Python, Django, REST APIs, and modern frontend technologies.
+            </p>
+        </div>
+        <div class="section">
+            <h2>Skills</h2>
+            <div class="skills">
+                <div class="skill">Python</div>
+                <div class="skill">Django</div>
+                <div class="skill">Django REST Framework</div>
+                <div class="skill">HTML & CSS</div>
+                <div class="skill">JavaScript</div>
+                <div class="skill">PostgreSQL</div>
+                <div class="skill">Git & GitHub</div>
+                <div class="skill">Docker</div>
+            </div>
+        </div>
+        <div class="section">
+            <h2>Projects</h2>
+            <div class="projects">
+                <div class="project">
+                    <h3>Blog Platform</h3>
+                    <p>A full-featured blog application with user authentication, comments, and admin panel.</p>
+                    <a href="#">View on GitHub</a>
+                </div>
+                <div class="project">
+                    <h3>Task Manager API</h3>
+                    <p>RESTful API for managing tasks, built with Django REST Framework and JWT authentication.</p>
+                    <a href="#">View on GitHub</a>
+                </div>
+                <div class="project">
+                    <h3>Portfolio Website</h3>
+                    <p>Personal portfolio built with Django, showcasing projects and skills.</p>
+                    <a href="#">View Live</a>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <h2>Contact</h2>
+            <p>
+                Email: <a href="mailto:rahil@example.com">rahil@example.com</a><br>
+                LinkedIn: <a href="https://www.linkedin.com/" target="_blank">linkedin.com/in/rahil</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
