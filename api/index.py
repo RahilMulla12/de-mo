@@ -1,1 +1,2 @@
-from project1.wsgi import app
+# api/index.py
+from project1.wsgi import application as app
